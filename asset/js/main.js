@@ -18,9 +18,11 @@ startGame.addEventListener('click', function (){
     const grill = document.getElementById('grill');
     grill.className = 'd-flex flex-wrap cursorPointer';
 
-    for (let i = 1; i <= 100; i++) {
+    const limit100 = 100;
+    for (let i = 1; i <= limit100; i++) {
         const cell = document.createElement('div');
-        cell.className = 'markupCella'
+        cell.className = 'markupCella';
+        cell.style.width = `calc(100% / ${Math.sqrt(limit100)})`;
 
         grill.append(cell);
 
