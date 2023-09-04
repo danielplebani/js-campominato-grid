@@ -13,7 +13,6 @@ startGame.addEventListener('click', function (){
     const containerMarkup = document.getElementById('container');
     containerMarkup.className = 'containerMarkup';
 
-
     startGame.className = 'd-none';
 
     const grill = document.getElementById('grill');
@@ -21,7 +20,7 @@ startGame.addEventListener('click', function (){
 
     for (let i = 1; i <= 100; i++) {
         const cell = document.createElement('div');
-        cell.className = 'markupColonna'
+        cell.className = 'markupCella'
 
         grill.append(cell);
 
